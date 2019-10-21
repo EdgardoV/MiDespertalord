@@ -25,28 +25,28 @@ class ViewController: UIViewController {
             self.view.addSubview(popOverVC.view)
             popOverVC.didMove(toParent: self)
         }else{
-            let center = UNUserNotificationCenter.current()
-            let content = UNMutableNotificationContent()
-            content.title = "alarma1"
-            content.body = "Abrir para mas información"
-            content.sound = .default
-            content.userInfo = ["flag":true]
             
-            let fireDate = Calendar.current.dateComponents([.day,.month,.year,.hour,.minute,.second], from: Date().addingTimeInterval(20))
-            let trigger = UNCalendarNotificationTrigger(dateMatching: fireDate, repeats: false)//UNTimeIntervalNotificationTrigger(timeInterval: 20, repeats: false)
-            let request = UNNotificationRequest(identifier: "reminder", content: content, trigger: trigger)
-            
-            center.add(request){ (error) in
-                
-                if error != nil {
-                    print(error?.localizedDescription)
-                }
-                
-                
-            }
         }
         
+        let center = UNUserNotificationCenter.current()
+        let content = UNMutableNotificationContent()
+        content.title = "alarma1"
+        content.body = "Abrir para mas información"
+        content.sound = .default
+        content.userInfo = ["flag":true]
         
+        let fireDate = Calendar.current.dateComponents([.day,.month,.year,.hour,.minute,.second], from: Date().addingTimeInterval(20))
+        let trigger = UNCalendarNotificationTrigger(dateMatching: fireDate, repeats: false)//UNTimeIntervalNotificationTrigger(timeInterval: 20, repeats: false)
+        let request = UNNotificationRequest(identifier: "reminder", content: content, trigger: trigger)
+        
+        center.add(request){ (error) in
+            
+            if error != nil {
+                print(error?.localizedDescription)
+            }
+            
+            
+        }
         
         
     }
