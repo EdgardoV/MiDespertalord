@@ -279,6 +279,7 @@
                         <viewLayoutGuide key="safeArea" id="Yop-uZ-COt"/>
                     </view>
                     <connections>
+                        <outlet property="alarmImage" destination="JTB-sf-qB1" id="HcA-14-irW"/>
                         <outlet property="alarmName" destination="yGw-Bx-Nxp" id="1gV-5H-uIu"/>
                         <outlet property="alarmTime" destination="fle-Dz-2NN" id="H5e-FU-STW"/>
                     </connections>

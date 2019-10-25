@@ -13,6 +13,7 @@ class PopUpViewController: UIViewController {
     
     @IBOutlet weak var alarmTime: UILabel!
     @IBOutlet weak var alarmName: UILabel!
+    @IBOutlet weak var alarmImage: UIImageView!
     
     
     @IBAction func endAlarm(_ sender: UIButton) {
@@ -27,6 +28,33 @@ class PopUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let randomInt = Int.random(in: 0..<6)
+        
+        switch randomInt {
+        case 0:
+            self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "image 1"))
+            self.alarmImage.image = #imageLiteral(resourceName: "image 1")
+        case 1:
+            self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "AP_Portrait_Landscapes_Stu_Meech-16 (1)"))
+            self.alarmImage.image = #imageLiteral(resourceName: "AP_Portrait_Landscapes_Stu_Meech-16 (1)")
+        case 2:
+            self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "portrait-landscape"))
+            self.alarmImage.image = #imageLiteral(resourceName: "portrait-landscape")
+        case 3:
+            self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "857ebd7658e56c84a4dc65cc4453a305"))
+            self.alarmImage.image = #imageLiteral(resourceName: "857ebd7658e56c84a4dc65cc4453a305")
+        case 4:
+            self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "tgrant-8592"))
+            self.alarmImage.image = #imageLiteral(resourceName: "tgrant-8592")
+        case 5:
+            self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "portrait-lighting-landscape-photography-dps-3"))
+            self.alarmImage.image = #imageLiteral(resourceName: "portrait-lighting-landscape-photography-dps-3")
+        default:
+            self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "portrait-landscape"))
+            self.alarmImage.image = #imageLiteral(resourceName: "portrait-landscape")
+        }
+        
         self.showAnimate()
         // Do any additional setup after loading the view.
     }
