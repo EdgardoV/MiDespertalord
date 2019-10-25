@@ -15,6 +15,7 @@ import AudioToolbox
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
+    public var timer:Timer!
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -59,10 +60,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         
         completionHandler([.alert, .badge, .sound])
+        
+        DispatchQueue.global(qos: .background).async {
+            DispatchQueue.main.async {
+                self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(AppDelegate.refresh), userInfo: nil, repeats: true)
+            }
+        }
+
+    }
+    
+    @objc func refresh(){
         AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        self.timer.invalidate()
+        self.timer = nil
         
         let mSingleton = Singleton.getInstance()
         mSingleton.flag = (response.notification.request.content.userInfo["flag"] != nil)
@@ -74,7 +88,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         self.window?.makeKeyAndVisible()
         
         
-        print(response.notification.request.content.userInfo)
+        //print(response.notification.request.content.userInfo)
         completionHandler()
     }
 

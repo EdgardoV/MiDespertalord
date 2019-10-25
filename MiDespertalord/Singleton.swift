@@ -13,9 +13,14 @@ class Singleton{
     private static var isCreated:Bool = false
     
     public var flag:Bool
+    public var Alarms:[AlarmInfo]
+    public var currentAlarm:AlarmInfo!
+    
     
     init() {
         flag = false
+        Alarms = [AlarmInfo]()
+        currentAlarm = nil
     }
     
     

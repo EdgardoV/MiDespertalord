@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import UserNotifications
 
 class PopUpViewController: UIViewController {
+    
+    @IBOutlet weak var alarmTime: UILabel!
+    @IBOutlet weak var alarmName: UILabel!
+    
     
     @IBAction func endAlarm(_ sender: UIButton) {
         removeAnimate()
     }
     
     @IBAction func posposeAlarm(_ sender: UIButton) {
+        createNotification()
         removeAnimate()
     }
     
@@ -59,6 +65,31 @@ class PopUpViewController: UIViewController {
                 self.view.removeFromSuperview()
             }
         });
+    }
+    
+    public func createNotification(){
+        let center = UNUserNotificationCenter.current()
+        let content = UNMutableNotificationContent()
+        content.title = "alarma"
+        content.body = "Abrir para mas información"
+        content.sound = UNNotificationSound.init(named: UNNotificationSoundName(rawValue: "sound.mp3"))
+        content.launchImageName = "Image 1.pdf"
+        content.userInfo = ["flag":true]
+
+        let fireDate = Calendar.current.dateComponents([.hour,.minute,.second], from: Date().addingTimeInterval(300))
+        
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: fireDate, repeats: false)//UNTimeIntervalNotificationTrigger(timeInterval: 20, repeats: false)
+        let request = UNNotificationRequest(identifier: "reminder", content: content, trigger: trigger)
+        
+        center.add(request){ (error) in
+            
+            if error != nil {
+                print(error?.localizedDescription)
+            }
+            
+            
+        }
     }
     
 }

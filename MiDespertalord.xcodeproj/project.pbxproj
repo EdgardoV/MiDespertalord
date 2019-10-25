@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A507CD05B6BCB569ED23367 /* Pods_MiDespertalord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0636623D2365268CFF9576A1 /* Pods_MiDespertalord.framework */; };
 		ED06D9E1235E13B6008AEDF2 /* GalleryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED06D9E0235E13B6008AEDF2 /* GalleryController.swift */; };
 		ED06D9E3235E1422008AEDF2 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED06D9E2235E1422008AEDF2 /* PopUpViewController.swift */; };
 		ED06D9E5235E1F94008AEDF2 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED06D9E4235E1F94008AEDF2 /* Singleton.swift */; };
@@ -20,9 +21,18 @@
 		ED368E89235985EC004EC703 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED368E86235985EC004EC703 /* ShadowView.swift */; };
 		ED368E8A235985EC004EC703 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED368E87235985EC004EC703 /* Cards.swift */; };
 		ED368E8B235985EC004EC703 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED368E88235985EC004EC703 /* GradientView.swift */; };
+		ED6A59292361F43A0077322A /* AlarmInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A59282361F43A0077322A /* AlarmInfo.swift */; };
+		ED6A592B2361F9260077322A /* AlarmInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A592A2361F9250077322A /* AlarmInfoCell.swift */; };
+		ED6A592D2361F95D0077322A /* AlarmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED6A592C2361F95D0077322A /* AlarmCell.xib */; };
+		ED6A59322362B25A0077322A /* AddAlarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A59312362B25A0077322A /* AddAlarmController.swift */; };
+		ED6A5934236347D80077322A /* DBAlarms.db in Resources */ = {isa = PBXBuildFile; fileRef = ED6A5933236347D00077322A /* DBAlarms.db */; };
+		ED6A593623635B160077322A /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED6A593523635B150077322A /* sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0636623D2365268CFF9576A1 /* Pods_MiDespertalord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiDespertalord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70B9DADFE3071965CD7369A8 /* Pods-MiDespertalord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiDespertalord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiDespertalord/Pods-MiDespertalord.debug.xcconfig"; sourceTree = "<group>"; };
+		9EE5AC3D4F07825F227C39A3 /* Pods-MiDespertalord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiDespertalord.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiDespertalord/Pods-MiDespertalord.release.xcconfig"; sourceTree = "<group>"; };
 		ED06D9E0235E13B6008AEDF2 /* GalleryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryController.swift; sourceTree = "<group>"; };
 		ED06D9E2235E1422008AEDF2 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		ED06D9E4235E1F94008AEDF2 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
@@ -39,6 +49,13 @@
 		ED368E86235985EC004EC703 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		ED368E87235985EC004EC703 /* Cards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 		ED368E88235985EC004EC703 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		ED6A59282361F43A0077322A /* AlarmInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmInfo.swift; sourceTree = "<group>"; };
+		ED6A592A2361F9250077322A /* AlarmInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmInfoCell.swift; sourceTree = "<group>"; };
+		ED6A592C2361F95D0077322A /* AlarmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmCell.xib; sourceTree = "<group>"; };
+		ED6A592E23620B320077322A /* analog-watch-alarm_daniel-simion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "analog-watch-alarm_daniel-simion.mp3"; sourceTree = "<group>"; };
+		ED6A59312362B25A0077322A /* AddAlarmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmController.swift; sourceTree = "<group>"; };
+		ED6A5933236347D00077322A /* DBAlarms.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = DBAlarms.db; sourceTree = "<group>"; };
+		ED6A593523635B150077322A /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,17 +63,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A507CD05B6BCB569ED23367 /* Pods_MiDespertalord.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37D2A4C73924E3CA85A00C6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70B9DADFE3071965CD7369A8 /* Pods-MiDespertalord.debug.xcconfig */,
+				9EE5AC3D4F07825F227C39A3 /* Pods-MiDespertalord.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3F74342483C9ED9184D61A10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0636623D2365268CFF9576A1 /* Pods_MiDespertalord.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ED368E62235979CB004EC703 = {
 			isa = PBXGroup;
 			children = (
 				ED368E6D235979CB004EC703 /* MiDespertalord */,
 				ED368E6C235979CB004EC703 /* Products */,
+				37D2A4C73924E3CA85A00C6A /* Pods */,
+				3F74342483C9ED9184D61A10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +123,13 @@
 				ED368E83235982CD004EC703 /* Montserrat-SemiBold.ttf */,
 				ED368E7D235979CD004EC703 /* Info.plist */,
 				ED368E75235979CB004EC703 /* MiDespertalord.xcdatamodeld */,
+				ED6A59282361F43A0077322A /* AlarmInfo.swift */,
+				ED6A592A2361F9250077322A /* AlarmInfoCell.swift */,
+				ED6A592C2361F95D0077322A /* AlarmCell.xib */,
+				ED6A592E23620B320077322A /* analog-watch-alarm_daniel-simion.mp3 */,
+				ED6A59312362B25A0077322A /* AddAlarmController.swift */,
+				ED6A593523635B150077322A /* sound.mp3 */,
+				ED6A5933236347D00077322A /* DBAlarms.db */,
 			);
 			path = MiDespertalord;
 			sourceTree = "<group>";
@@ -97,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED368E80235979CD004EC703 /* Build configuration list for PBXNativeTarget "MiDespertalord" */;
 			buildPhases = (
+				0C4AF90BA40C2439FB2FC3D7 /* [CP] Check Pods Manifest.lock */,
 				ED368E67235979CB004EC703 /* Sources */,
 				ED368E68235979CB004EC703 /* Frameworks */,
 				ED368E69235979CB004EC703 /* Resources */,
+				AB2CCA1E6B8A4BE877DF44BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,14 +194,56 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6A5934236347D80077322A /* DBAlarms.db in Resources */,
+				ED6A593623635B160077322A /* sound.mp3 in Resources */,
 				ED368E7C235979CD004EC703 /* LaunchScreen.storyboard in Resources */,
 				ED368E79235979CD004EC703 /* Assets.xcassets in Resources */,
 				ED368E84235982CD004EC703 /* Montserrat-SemiBold.ttf in Resources */,
+				ED6A592D2361F95D0077322A /* AlarmCell.xib in Resources */,
 				ED368E74235979CB004EC703 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C4AF90BA40C2439FB2FC3D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiDespertalord-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB2CCA1E6B8A4BE877DF44BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MiDespertalord/Pods-MiDespertalord-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiDespertalord/Pods-MiDespertalord-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ED368E67235979CB004EC703 /* Sources */ = {
@@ -163,11 +251,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED368E8A235985EC004EC703 /* Cards.swift in Sources */,
+				ED6A59322362B25A0077322A /* AddAlarmController.swift in Sources */,
 				ED06D9E5235E1F94008AEDF2 /* Singleton.swift in Sources */,
 				ED06D9E1235E13B6008AEDF2 /* GalleryController.swift in Sources */,
+				ED6A59292361F43A0077322A /* AlarmInfo.swift in Sources */,
 				ED368E89235985EC004EC703 /* ShadowView.swift in Sources */,
 				ED368E8B235985EC004EC703 /* GradientView.swift in Sources */,
 				ED368E71235979CB004EC703 /* ViewController.swift in Sources */,
+				ED6A592B2361F9260077322A /* AlarmInfoCell.swift in Sources */,
 				ED368E6F235979CB004EC703 /* AppDelegate.swift in Sources */,
 				ED368E77235979CB004EC703 /* MiDespertalord.xcdatamodeld in Sources */,
 				ED06D9E3235E1422008AEDF2 /* PopUpViewController.swift in Sources */,
@@ -314,6 +405,7 @@
 		};
 		ED368E81235979CD004EC703 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B9DADFE3071965CD7369A8 /* Pods-MiDespertalord.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -332,6 +424,7 @@
 		};
 		ED368E82235979CD004EC703 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EE5AC3D4F07825F227C39A3 /* Pods-MiDespertalord.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

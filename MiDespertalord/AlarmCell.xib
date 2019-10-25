@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AlarmInfoCell" customModule="MiDespertalord" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="97"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomLine" translatesAutoresizingMaskIntoConstraints="NO" id="7tV-dx-Jfd">
+                    <rect key="frame" x="5" y="80" width="404" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="dVx-MC-fpK"/>
+                    </constraints>
+                </imageView>
+                <switch opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="otH-tE-3UZ">
+                    <rect key="frame" x="335" y="33" width="51" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="MxQ-Gk-K45"/>
+                        <constraint firstAttribute="width" constant="49" id="j1e-NJ-KFA"/>
+                    </constraints>
+                    <color key="onTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="enableDisable:" destination="iN0-l3-epB" eventType="valueChanged" id="f3J-fl-bUW"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L M M J V S D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgc-wa-a58">
+                    <rect key="frame" x="148.5" y="38" width="117" height="21"/>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alarmname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyB-3z-uHt">
+                    <rect key="frame" x="33" y="60" width="77.5" height="16"/>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                    <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gil-NY-ZVX">
+                    <rect key="frame" x="30" y="38" width="83.5" height="21"/>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="7tV-dx-Jfd" secondAttribute="bottom" id="0Dt-3l-WKN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="otH-tE-3UZ" secondAttribute="trailing" constant="30" id="1Fl-Ui-og0"/>
+                <constraint firstItem="gil-NY-ZVX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2b6-5o-EP6"/>
+                <constraint firstItem="7tV-dx-Jfd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="3fj-CJ-xwe"/>
+                <constraint firstItem="7tV-dx-Jfd" firstAttribute="top" secondItem="otH-tE-3UZ" secondAttribute="bottom" constant="16" id="5lF-jR-GBl"/>
+                <constraint firstItem="fyB-3z-uHt" firstAttribute="centerX" secondItem="gil-NY-ZVX" secondAttribute="centerX" id="H2K-Cs-bMq"/>
+                <constraint firstItem="bgc-wa-a58" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Hhu-uY-sQU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7tV-dx-Jfd" secondAttribute="trailing" constant="5" id="Jds-WZ-Jz1"/>
+                <constraint firstItem="otH-tE-3UZ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="VY4-b2-6qr"/>
+                <constraint firstItem="7tV-dx-Jfd" firstAttribute="top" secondItem="fyB-3z-uHt" secondAttribute="bottom" constant="4" id="X0x-Rc-5i6"/>
+                <constraint firstItem="7tV-dx-Jfd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aC1-Hj-OSO"/>
+                <constraint firstItem="bgc-wa-a58" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="b61-lI-xCh"/>
+                <constraint firstItem="gil-NY-ZVX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="jbU-Sb-AGA"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="alarmDays" destination="bgc-wa-a58" id="14c-cd-vVP"/>
+                <outlet property="alarmIsOn" destination="otH-tE-3UZ" id="Etc-pU-GZf"/>
+                <outlet property="alarmName" destination="fyB-3z-uHt" id="xJE-b8-O0g"/>
+                <outlet property="alarmTime" destination="gil-NY-ZVX" id="snC-7m-C1P"/>
+            </connections>
+            <point key="canvasLocation" x="149.27536231884059" y="-82.03125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bottomLine" width="339" height="2"/>
+    </resources>
+</document>
