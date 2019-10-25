@@ -75,8 +75,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         
-        self.timer.invalidate()
-        self.timer = nil
+        if self.timer != nil{
+            self.timer.invalidate()
+            self.timer = nil
+        }
+        
         
         let mSingleton = Singleton.getInstance()
         mSingleton.flag = (response.notification.request.content.userInfo["flag"] != nil)
