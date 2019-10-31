@@ -27,6 +27,8 @@
 		ED6A59322362B25A0077322A /* AddAlarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A59312362B25A0077322A /* AddAlarmController.swift */; };
 		ED6A5934236347D80077322A /* DBAlarms.db in Resources */ = {isa = PBXBuildFile; fileRef = ED6A5933236347D00077322A /* DBAlarms.db */; };
 		ED6A593623635B160077322A /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED6A593523635B150077322A /* sound.mp3 */; };
+		ED6A5938236B91DA0077322A /* motivational_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED6A5937236B91D90077322A /* motivational_sound.mp3 */; };
+		ED6A593A236B9B4F0077322A /* sound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED6A5939236B9B4F0077322A /* sound2.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		ED6A59312362B25A0077322A /* AddAlarmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmController.swift; sourceTree = "<group>"; };
 		ED6A5933236347D00077322A /* DBAlarms.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = DBAlarms.db; sourceTree = "<group>"; };
 		ED6A593523635B150077322A /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
+		ED6A5937236B91D90077322A /* motivational_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = motivational_sound.mp3; sourceTree = "<group>"; };
+		ED6A5939236B9B4F0077322A /* sound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound2.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 				ED6A592C2361F95D0077322A /* AlarmCell.xib */,
 				ED6A592E23620B320077322A /* analog-watch-alarm_daniel-simion.mp3 */,
 				ED6A59312362B25A0077322A /* AddAlarmController.swift */,
+				ED6A5937236B91D90077322A /* motivational_sound.mp3 */,
+				ED6A5939236B9B4F0077322A /* sound2.mp3 */,
 				ED6A593523635B150077322A /* sound.mp3 */,
 				ED6A5933236347D00077322A /* DBAlarms.db */,
 			);
@@ -197,7 +203,9 @@
 				ED6A5934236347D80077322A /* DBAlarms.db in Resources */,
 				ED6A593623635B160077322A /* sound.mp3 in Resources */,
 				ED368E7C235979CD004EC703 /* LaunchScreen.storyboard in Resources */,
+				ED6A5938236B91DA0077322A /* motivational_sound.mp3 in Resources */,
 				ED368E79235979CD004EC703 /* Assets.xcassets in Resources */,
+				ED6A593A236B9B4F0077322A /* sound2.mp3 in Resources */,
 				ED368E84235982CD004EC703 /* Montserrat-SemiBold.ttf in Resources */,
 				ED6A592D2361F95D0077322A /* AlarmCell.xib in Resources */,
 				ED368E74235979CB004EC703 /* Main.storyboard in Resources */,

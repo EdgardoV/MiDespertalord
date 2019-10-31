@@ -32,6 +32,11 @@ class AddAlarmController: UIViewController {
         self.present(ViewController, animated: true, completion: nil)
     }
     
+    @IBAction func setAlarmOnClock(_ sender: UIButton) {
+        txtTime.becomeFirstResponder()
+    }
+    
+    
     
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var txtTime: UITextField!
@@ -266,7 +271,7 @@ class AddAlarmController: UIViewController {
         let content = UNMutableNotificationContent()
         content.title = txtName.text ?? "alarma"
         content.body = "Abrir para mas información"
-        content.sound = UNNotificationSound.init(named: UNNotificationSoundName(rawValue: "sound.mp3"))
+        content.sound = UNNotificationSound.init(named: UNNotificationSoundName(rawValue: "sound2.mp3"))
         content.launchImageName = "Image 1.pdf"
         content.userInfo = ["flag":true]
         
