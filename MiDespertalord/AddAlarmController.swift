@@ -271,7 +271,7 @@ class AddAlarmController: UIViewController {
         let content = UNMutableNotificationContent()
         content.title = txtName.text ?? "alarma"
         content.body = "Abrir para mas información"
-        content.sound = UNNotificationSound.init(named: UNNotificationSoundName(rawValue: "sound2.mp3"))
+        content.sound = UNNotificationSound.init(named: UNNotificationSoundName(rawValue: "sound2  .mp3"))
         content.launchImageName = "Image 1.pdf"
         content.userInfo = ["flag":true]
         

@@ -29,6 +29,8 @@
 		ED6A593623635B160077322A /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED6A593523635B150077322A /* sound.mp3 */; };
 		ED6A5938236B91DA0077322A /* motivational_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED6A5937236B91D90077322A /* motivational_sound.mp3 */; };
 		ED6A593A236B9B4F0077322A /* sound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED6A5939236B9B4F0077322A /* sound2.mp3 */; };
+		ED978BC3238309E900A2D0F9 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED978BC2238309E900A2D0F9 /* Slide.xib */; };
+		ED978BC523830C3700A2D0F9 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED978BC423830C3700A2D0F9 /* Slide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		ED6A593523635B150077322A /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
 		ED6A5937236B91D90077322A /* motivational_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = motivational_sound.mp3; sourceTree = "<group>"; };
 		ED6A5939236B9B4F0077322A /* sound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound2.mp3; sourceTree = "<group>"; };
+		ED978BC2238309E900A2D0F9 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		ED978BC423830C3700A2D0F9 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,8 @@
 				ED6A5939236B9B4F0077322A /* sound2.mp3 */,
 				ED6A593523635B150077322A /* sound.mp3 */,
 				ED6A5933236347D00077322A /* DBAlarms.db */,
+				ED978BC2238309E900A2D0F9 /* Slide.xib */,
+				ED978BC423830C3700A2D0F9 /* Slide.swift */,
 			);
 			path = MiDespertalord;
 			sourceTree = "<group>";
@@ -206,6 +212,7 @@
 				ED6A5938236B91DA0077322A /* motivational_sound.mp3 in Resources */,
 				ED368E79235979CD004EC703 /* Assets.xcassets in Resources */,
 				ED6A593A236B9B4F0077322A /* sound2.mp3 in Resources */,
+				ED978BC3238309E900A2D0F9 /* Slide.xib in Resources */,
 				ED368E84235982CD004EC703 /* Montserrat-SemiBold.ttf in Resources */,
 				ED6A592D2361F95D0077322A /* AlarmCell.xib in Resources */,
 				ED368E74235979CB004EC703 /* Main.storyboard in Resources */,
@@ -266,6 +273,7 @@
 				ED368E89235985EC004EC703 /* ShadowView.swift in Sources */,
 				ED368E8B235985EC004EC703 /* GradientView.swift in Sources */,
 				ED368E71235979CB004EC703 /* ViewController.swift in Sources */,
+				ED978BC523830C3700A2D0F9 /* Slide.swift in Sources */,
 				ED6A592B2361F9260077322A /* AlarmInfoCell.swift in Sources */,
 				ED368E6F235979CB004EC703 /* AppDelegate.swift in Sources */,
 				ED368E77235979CB004EC703 /* MiDespertalord.xcdatamodeld in Sources */,

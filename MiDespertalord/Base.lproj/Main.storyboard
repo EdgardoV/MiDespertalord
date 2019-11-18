@@ -325,8 +325,8 @@
                                         <color key="shadowColor" white="0.0" alpha="0.42999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="shadowOffset" width="0.0" height="2"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del autor | Año de la foto" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAr-WQ-JpO">
-                                        <rect key="frame" x="131" y="49" width="172" height="12"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MiDespertalord" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAr-WQ-JpO">
+                                        <rect key="frame" x="222.66666666666671" y="49" width="80.333333333333343" height="12"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="10"/>
                                         <color key="textColor" white="0.0" alpha="0.42999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -382,47 +382,20 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image 1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xMr-Ix-j5r">
                                         <rect key="frame" x="0.0" y="0.0" width="310" height="392"/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKP-7h-Kfw" customClass="Cards" customModule="MiDespertalord" customModuleProvider="target">
-                                        <rect key="frame" x="-15" y="-15" width="59" height="53"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKC-xE-gBm">
-                                                <rect key="frame" x="0.0" y="0.0" width="59" height="53"/>
-                                                <state key="normal" image="favorites"/>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="53" id="8LP-lf-0a1"/>
-                                            <constraint firstAttribute="bottom" secondItem="uKC-xE-gBm" secondAttribute="bottom" id="9uh-UD-nQu"/>
-                                            <constraint firstAttribute="trailing" secondItem="uKC-xE-gBm" secondAttribute="trailing" id="bhz-Fn-1bb"/>
-                                            <constraint firstItem="uKC-xE-gBm" firstAttribute="leading" secondItem="EKP-7h-Kfw" secondAttribute="leading" id="dOt-pP-v26"/>
-                                            <constraint firstAttribute="width" constant="59" id="lOf-Da-C8E"/>
-                                            <constraint firstItem="uKC-xE-gBm" firstAttribute="top" secondItem="EKP-7h-Kfw" secondAttribute="top" id="rvZ-Jh-nqK"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05N-9F-TmT">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="392"/>
+                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="05N-9F-TmT" secondAttribute="trailing" id="Bbe-qy-qbR"/>
                                     <constraint firstItem="xMr-Ix-j5r" firstAttribute="leading" secondItem="otD-pv-mDE" secondAttribute="leading" id="I4W-tz-HYf"/>
-                                    <constraint firstItem="EKP-7h-Kfw" firstAttribute="top" secondItem="otD-pv-mDE" secondAttribute="top" constant="-15" id="Rg6-vA-WHl"/>
                                     <constraint firstItem="xMr-Ix-j5r" firstAttribute="top" secondItem="otD-pv-mDE" secondAttribute="top" id="joZ-vp-tIJ"/>
-                                    <constraint firstItem="EKP-7h-Kfw" firstAttribute="leading" secondItem="otD-pv-mDE" secondAttribute="leading" constant="-15" id="k5C-f7-d4w"/>
+                                    <constraint firstAttribute="bottom" secondItem="05N-9F-TmT" secondAttribute="bottom" id="mJO-Hl-AKy"/>
                                     <constraint firstAttribute="trailing" secondItem="xMr-Ix-j5r" secondAttribute="trailing" id="tI9-fU-hmL"/>
                                     <constraint firstAttribute="bottom" secondItem="xMr-Ix-j5r" secondAttribute="bottom" id="vKJ-yZ-5tZ"/>
+                                    <constraint firstItem="05N-9F-TmT" firstAttribute="leading" secondItem="otD-pv-mDE" secondAttribute="leading" id="w6r-62-xu4"/>
+                                    <constraint firstItem="05N-9F-TmT" firstAttribute="top" secondItem="otD-pv-mDE" secondAttribute="top" id="zgo-ix-xBr"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -458,9 +431,26 @@
                                     <segue destination="xd1-Jo-0r4" kind="presentation" modalTransitionStyle="crossDissolve" id="zE2-eV-c31"/>
                                 </connections>
                             </button>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="20" translatesAutoresizingMaskIntoConstraints="NO" id="85G-Sg-5Fy">
-                                <rect key="frame" x="207" y="566" width="0.0" height="37"/>
-                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/ 76" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Keg-94-6pN">
+                                <rect key="frame" x="188" y="575" width="38" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="IOf-Z8-TpB"/>
+                                    <constraint firstAttribute="width" constant="38" id="ml5-mR-3fn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSW-2X-Ld5">
+                                <rect key="frame" x="156" y="574.33333333333337" width="27" height="26.666666666666629"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -470,14 +460,13 @@
                             <constraint firstItem="INV-tj-0u8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1GE-hI-686"/>
                             <constraint firstItem="tbW-kW-Pv5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="26K-3l-2vf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yu2-KJ-x0e" secondAttribute="trailing" constant="25" id="EXY-Xc-svJ"/>
-                            <constraint firstItem="85G-Sg-5Fy" firstAttribute="leading" secondItem="otD-pv-mDE" secondAttribute="trailing" constant="-155" id="F6n-KH-PIY"/>
+                            <constraint firstItem="Keg-94-6pN" firstAttribute="leading" secondItem="VSW-2X-Ld5" secondAttribute="trailing" constant="5" id="GCk-G3-bfI"/>
                             <constraint firstItem="Yu2-KJ-x0e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="GdE-Zf-GsT"/>
-                            <constraint firstItem="85G-Sg-5Fy" firstAttribute="top" secondItem="otD-pv-mDE" secondAttribute="bottom" constant="2" id="Ji5-XH-XxE"/>
                             <constraint firstItem="otD-pv-mDE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="Kxc-d0-bzQ"/>
+                            <constraint firstItem="Keg-94-6pN" firstAttribute="centerX" secondItem="05N-9F-TmT" secondAttribute="centerX" id="Too-LW-sjM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KbG-i8-4fT" secondAttribute="trailing" constant="48" id="YHc-3D-Ky0"/>
                             <constraint firstItem="KbG-i8-4fT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="Yvs-97-ne9"/>
                             <constraint firstItem="h6U-0M-6pH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZES-zG-qak"/>
-                            <constraint firstItem="85G-Sg-5Fy" firstAttribute="centerX" secondItem="otD-pv-mDE" secondAttribute="centerX" id="ZYm-Fh-38J"/>
                             <constraint firstItem="KbG-i8-4fT" firstAttribute="top" secondItem="otD-pv-mDE" secondAttribute="bottom" constant="43" id="ZkU-8l-I8Z"/>
                             <constraint firstItem="KbG-i8-4fT" firstAttribute="top" secondItem="otD-pv-mDE" secondAttribute="bottom" constant="43" id="aAr-4z-zXn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="otD-pv-mDE" secondAttribute="trailing" constant="52" id="aBM-5O-pMZ"/>
@@ -486,13 +475,23 @@
                             <constraint firstItem="INV-tj-0u8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d0T-z4-CzM"/>
                             <constraint firstItem="otD-pv-mDE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eBn-CE-Ffv"/>
                             <constraint firstItem="otD-pv-mDE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oLp-Mu-mzz"/>
+                            <constraint firstItem="Keg-94-6pN" firstAttribute="top" secondItem="otD-pv-mDE" secondAttribute="bottom" constant="11" id="piE-7w-Byc"/>
+                            <constraint firstItem="KbG-i8-4fT" firstAttribute="top" secondItem="Keg-94-6pN" secondAttribute="bottom" constant="7" id="rMw-6A-Zhe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="INV-tj-0u8" secondAttribute="trailing" id="sSh-gH-DEX"/>
+                            <constraint firstItem="VSW-2X-Ld5" firstAttribute="centerY" secondItem="Keg-94-6pN" secondAttribute="centerY" id="uuM-oF-Z5v"/>
                             <constraint firstItem="KbG-i8-4fT" firstAttribute="centerX" secondItem="otD-pv-mDE" secondAttribute="centerX" id="uwx-W5-U9f"/>
                             <constraint firstItem="h6U-0M-6pH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w7K-hq-vMV"/>
                             <constraint firstItem="otD-pv-mDE" firstAttribute="top" secondItem="tbW-kW-Pv5" secondAttribute="bottom" constant="40" id="woN-mH-uDo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="INV-tj-0u8" id="ci4-10-E81"/>
+                        <outlet property="lblImagen" destination="VSW-2X-Ld5" id="GQW-e9-KbE"/>
+                        <outlet property="lblNameImagen" destination="C0k-AX-y6u" id="neB-xC-PJZ"/>
+                        <outlet property="lblfecha" destination="tbW-kW-Pv5" id="yny-i5-VLA"/>
+                        <outlet property="scrollImagenes" destination="05N-9F-TmT" id="Bfp-do-UuR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -792,7 +791,6 @@
         <image name="bottomLine" width="339" height="2"/>
         <image name="btnUnselelected" width="70" height="70"/>
         <image name="clock" width="211" height="211"/>
-        <image name="favorites" width="15" height="15"/>
         <image name="image 1" width="375" height="812"/>
         <image name="mainLogo" width="60" height="59"/>
     </resources>

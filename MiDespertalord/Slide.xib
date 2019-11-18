@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Slide" customModule="MiDespertalord" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="392"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image 1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oYN-4w-1rj">
+                    <rect key="frame" x="0.0" y="0.0" width="310" height="392"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oYN-4w-1rj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4Mj-9Z-fW9"/>
+                <constraint firstItem="oYN-4w-1rj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Cq5-xu-N32"/>
+                <constraint firstAttribute="trailing" secondItem="oYN-4w-1rj" secondAttribute="trailing" id="qhv-OI-a19"/>
+                <constraint firstAttribute="bottom" secondItem="oYN-4w-1rj" secondAttribute="bottom" id="vrE-2B-wXS"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imagen" destination="oYN-4w-1rj" id="rrk-kk-EH2"/>
+            </connections>
+            <point key="canvasLocation" x="-55.072463768115945" y="-112.16517857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image 1" width="375" height="812"/>
+    </resources>
+</document>
